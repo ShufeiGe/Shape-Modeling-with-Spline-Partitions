@@ -6,7 +6,7 @@ The file contains code implements the shape modeling with spline partitions desc
 Citation
 If you use the code (partial or all) in your research, please cite the following publication:
 
-*Ge,S., Wang,S., Elliott, L. (2021). Shape Modeling with Spline Partitions.*
+[*Ge,S., Wang,S., Elliott, L. (2021). Shape Modeling with Spline Partitions.*]
 
 LICENSES
 Shape-Modeling-with-Spline-Partitions v1.0. Copyright (c) 2021. Shufei Ge.
