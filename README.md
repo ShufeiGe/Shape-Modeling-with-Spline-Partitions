@@ -1,10 +1,10 @@
 # Shape-Modeling-with-Spline-Partitions
  
-The file contains files implements the shape modeling with spline partitions described in **Ge,S., Wang,S., Elliott, L. (2021). Shape Modeling with Spline Partitions (Manuscript is under review)**. The code files are released under the open source BSD 2-clause license.
+The file contains functions implements the shape modeling with spline partitions described in **Ge,S., Wang,S., Elliott, L. (2021). Shape Modeling with Spline Partitions (Manuscript is under review)**. The code files are released under the open source BSD 2-clause license.
 
  
 Citation
-If you use the code files in your research, please cite the following publication:
+If you use the functions in your research, please cite the following publication:
 
 Ge,S., Wang,S., Elliott, L. (2021). Shape Modeling with Spline Partitions. 
 
