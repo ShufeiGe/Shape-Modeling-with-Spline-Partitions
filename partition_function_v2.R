@@ -65,7 +65,7 @@ Cut_plane_standard <- function(V,V.ID,V.label,tolerance,dist.max=NA,filter.ind=F
       Pc0 <- Pc
       
       r   <- runif(1,-pi,pi)
-      p.new <- mapf_v3(V,r)
+      p.new <- mapf(V,r)
       x.temp <- as.matrix(p.new[,1])
       minmax <- f_bezier_minmax(Pc0,deg)
       
@@ -106,7 +106,7 @@ Cut_plane_standard <- function(V,V.ID,V.label,tolerance,dist.max=NA,filter.ind=F
             xy.crv <- points$curves
             ess <- points$ess
           }          
-          xy.crv.af <- rev.mapf_v3(xy.crv,r)
+          xy.crv.af <- rev.mapf(xy.crv,r)
         }
 
       }else{
@@ -177,8 +177,6 @@ Generative_Process <- function(partition,V.all,V.label,tau,group.level,group.len
       Cut <- Cut_plane_standard(V.temp,V.temp.ID,V.temp.label,tolerance,dist.max,filter.ind,method)
       
       if(Cut$skip.index!=1){
-        #index.left <- Cut$V.left.ID
-        #index.right <- Cut$V.right.ID
         
         cut.order <- c(cut.order,j)
         partition$cut.order <- cut.order
@@ -213,7 +211,6 @@ Generative_Process <- function(partition,V.all,V.label,tau,group.level,group.len
       
         #if(sum(!is.na(V.lbl.left))>0 & sum(is.na(V.lbl.left))>0 & (sum(table(V.lbl.left)!=0)>1)){
          if(sum(!is.na(V.lbl.left))>0 & (sum(table(V.lbl.left)!=0)>1)){
-          #dist.max.left <- max(dist.all[V.temp.ID.left,V.temp.ID.left])
           
           id.train.left <-  which(id.train %in% V.temp.ID.left )
           dist.max.left <- max(dist.all[id.train.left,id.train.left])
